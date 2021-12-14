@@ -6,7 +6,7 @@
 }
 
 :root{
-    --color-primary: #141414;
+    --color-primary: #0c0c0c;
     --color-secondary: #aaa;
     --color-three: #e50914;
     --color-four: #ffffff;
@@ -58,7 +58,7 @@ header nav .menus{
     align-items: center;
     gap: 1rem;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4) 100%), url('https://s3-sa-east-1.amazonaws.com/falauniversidades-wordpress-library/f5/fotos/3019_1604_Pauta_TextoImage.jpg');
-    height: 30rem;
+    height: 35rem;
     background-size: cover;
 }
 
