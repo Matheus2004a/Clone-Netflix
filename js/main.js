@@ -9,3 +9,9 @@ closeModalPlayMovie.addEventListener("click", () => {
 btnPlayMovie.addEventListener("click", () => {
     modalMovie.classList.toggle("active")
 })
+
+const buttonBackToTop = document.querySelector(".btn-back-to-top")
+
+window.addEventListener("scroll", () => {
+    scrollY >= 380 ? buttonBackToTop.classList.add("show") : buttonBackToTop.classList.remove("show")
+})

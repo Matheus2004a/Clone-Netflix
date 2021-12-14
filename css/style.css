@@ -12,6 +12,10 @@
     --color-four: #ffffff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: var(--color-primary) !important;
     color: var(--color-four);
@@ -88,6 +92,8 @@ header nav .menus{
 }
 
 .modal{
+    min-width: 600px;
+    position: relative;
     margin: 0 auto;
     width: min-content;
     background-color: #4b4b4b;
@@ -97,8 +103,8 @@ header nav .menus{
 
 .modal span{
     position: relative;
-    bottom: 0.5rem;
-    left: 16rem;
+    top: -5px;
+    left: 48rem;
     font-size: 1.5rem;
     opacity: 0.85;
     transition: 0.3s;
@@ -175,6 +181,27 @@ button{
 
 .container-list-movies{
     display: flex;
+}
+
+.btn-back-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    padding: 10px;
+    z-index: 10;
+    clip-path: circle();
+    transform: translateY(100px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.btn-back-to-top:hover{
+    cursor: pointer;
+}
+
+.btn-back-to-top.show{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 600px){
