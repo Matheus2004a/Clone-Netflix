@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', Times, serif;
+}
+
+:root{
+    --color-primary: #141414;
+    --color-secondary: #aaa;
+    --color-three: #e50914;
+    --color-four: #ffffff;
+}
+
+body{
+    background: var(--color-primary);
+    color: var(--color-four);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.brand-netflix{
+    color: var(--color-three);
+    font-family: 'Arial Black', Times;
+    font-size: 2.5rem;
+}
+
+header .menus li a{
+    color: var(--color-secondary);
+    transition: 0.3s;
+}
+
+header .menus li a:hover{
+    color: var(--color-four);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .menus{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.slide-movie{
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4) 100%), url('https://s3-sa-east-1.amazonaws.com/falauniversidades-wordpress-library/f5/fotos/3019_1604_Pauta_TextoImage.jpg');
+    height: 30rem;
+    background-size: cover;
+}
+
+.content-movie{
+    display: grid;
+    gap: 1.5rem;
+    width: 70%;
+}
+
+.container{
+    margin: 0 2rem;
+}
+
+.slide-movie h2{
+    font-size: 2.5rem;
+}
+
+.slide-movie button{
+    transition: 0.3s;
+}
+
+.slide-movie button:hover{
+    cursor: pointer;
+    opacity: 0.95;
+}
+
+img{
+    width: 100%;
+}
+
+.slide-movie .container-buttons button{
+    padding: 0.5rem 2rem;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--color-four);
+}
+
+.container-buttons button:hover{
+    background-color: var(--color-four);
+    color: var(--color-primary);
+}
+
+.container-buttons button span{
+    margin-right: 5px;
+}
+
+button{
+    border: none;
+}
+
+.section-list-movies{
+    margin: 5rem 1rem;
+}
+
+.section-list-movies h3{
+    margin: 1rem 0;
+}
+
+.section-list-movies img{
+    width: 15rem;
+    border-radius: 3px;
+}
+
+.container-list-movies{
+    display: flex;
+    gap: 1.5rem;
+}
