@@ -85,10 +85,6 @@ nav .menus{
     opacity: 0.95;
 }
 
-img{
-    width: 100%;
-}
-
 .slide-movie .container-buttons button{
     padding: 0.5rem 2rem;
     border-radius: 3px;
@@ -120,6 +116,12 @@ button{
 .section-list-movies img{
     width: 15rem;
     border-radius: 3px;
+    transition: 0.3s;
+}
+
+.section-list-movies img:hover{
+    cursor: pointer;
+    opacity: 0.85;
 }
 
 .container-list-movies{
