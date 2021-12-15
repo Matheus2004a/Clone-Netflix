@@ -21,8 +21,11 @@ body{
     color: var(--color-four) !important;
 }
 
+header .container, nav .menus,.infos-movie,.modal-sinopse,.modal-sinopse-infos,.container-list-movies{
+    display: flex;  
+}
+
 header .container{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
@@ -55,7 +58,6 @@ a{
 }
 
 header nav .menus{
-    display: flex;
     gap: 1.5rem;
     justify-content: center;
 }
@@ -70,7 +72,7 @@ header nav .menus{
     background-size: cover;
 }
 
-.slide-movie,.container-buttons button{
+.slide-movie,.container-buttons button,.infos-movie .allow-age-movie{
     font-weight: bold;
 }
 
@@ -85,10 +87,10 @@ header nav .menus{
 }
 
 .modal-content{
-    background-color: #3a3a3a !important;
+    background-color: #4d4d4d !important;
 }
 
-.modal-content,.modal-header{
+.modal-content,.modal-header,button{
     border: none !important;
 }
 
@@ -117,7 +119,6 @@ header nav .menus{
 }
 
 .infos-movie{
-    display: flex;
     align-items: center;
     gap: 10px;
     color: var(--color-secondary);
@@ -128,11 +129,22 @@ header nav .menus{
     padding: 5px 8px;
     border-radius: 3px;
     color: var(--color-four);
-    font-weight: bold;
 }
 
 .modal-body p{
     margin: 1rem 0;
+}
+
+.modal-sinopse{
+    gap: 2rem;
+}
+
+.modal-sinopse > p{
+    font-size: 1.2rem;
+}
+
+.modal-sinopse-infos{
+    flex-wrap: wrap;
 }
 
 .modal-sinopse span{
@@ -165,10 +177,6 @@ header nav .menus{
     margin-right: 5px;
 }
 
-button{
-    border: none;
-}
-
 .section-list-movies{
     margin: 5rem 1rem;
 }
@@ -185,10 +193,6 @@ button{
 .section-list-movies img:hover{
     cursor: pointer;
     opacity: 0.85;
-}
-
-.container-list-movies{
-    display: flex;
 }
 
 .btn-back-to-top{
@@ -208,8 +212,8 @@ button{
 }
 
 .btn-back-to-top.show{
-    opacity: 1;
     transform: translateY(0);
+    opacity: 1;
 }
 
 @media (max-width: 600px){
