@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-movie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -30,6 +30,35 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture show-info=0"
                         allowfullscreen alt="Como vender drogas online">
                     </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-infos-movie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <img src="https://m.media-amazon.com/images/M/MV5BZjIzNTkyNjktNDdmMy00MmI4LWFlN2MtNDllYTVhZjljNWFiXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg"
+                            alt="Como vender drogas online">
+                    </figure>
+                    <div class="infos-movie">
+                        <span>2019</span>
+                        <span class="allow-age-movie">18</span>
+                        <span>3 Temporadas</span>
+                    </div>
+                    <div class="modal-sinopse">
+                        <p>Para recuperar a ex-namorada, um adolescente nerd começa a vender ecstasy online. Em pouco
+                            tempo, ele se torna um dos maiores traficantes da Europa.</p>
+                        <span>Estrelando:</span> Maximilian Mundt, Danilo Kamperidis, Lena Klenke.
+                        <span>Criação:</span> Philipp Kässbohrer, Matthias Murmann.
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,18 +82,18 @@
     <main>
         <div class="slide-movie container">
             <div class="content-movie">
-                <h2 class="title-movie">Como Vender Drogas Online (Rápido) (2019)</h2>
+                <h2 class="title-movie">Como Vender Drogas Online (Rápido) 2019</h2>
                 <p>Para recuperar a ex-namorada, um adolescente nerd começa a vender ecstasy online. Em pouco tempo, ele
                     se torna um dos maiores traficantes da Europa.
                 </p>
 
                 <div class="container-buttons">
                     <button role="button" class="button-play-movie" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
+                        data-bs-target="#modal-movie">
                         <span><i class="fas fa-play"></i></span>
                         Assistir agora
                     </button>
-                    <button role="button">
+                    <button role="button" data-bs-toggle="modal" data-bs-target="#modal-infos-movie">
                         <span><i class="fas fa-info-circle"></i></span>
                         Mais informações
                     </button>
@@ -163,7 +192,7 @@
         <button class="btn-back-to-top"><i class="fas fa-arrow-up"></i></button>
     </a>
 
-    <script src="https://kit.fontawesome.com/798bcbaf05.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51dc1929bd.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/setup.js"></script>

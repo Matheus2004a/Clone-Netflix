@@ -70,10 +70,14 @@ header nav .menus{
     background-size: cover;
 }
 
+.slide-movie,.container-buttons button{
+    font-weight: bold;
+}
+
 .content-movie{
     display: grid;
     gap: 1.5rem;
-    width: 70%;
+    width: 65%;
 }
 
 .container{
@@ -81,7 +85,7 @@ header nav .menus{
 }
 
 .modal-content{
-    background-color: #343434 !important;
+    background-color: #3a3a3a !important;
 }
 
 .modal-content,.modal-header{
@@ -92,19 +96,47 @@ header nav .menus{
     position: absolute;
     font-size: 2rem;
     color: var(--color-four);
-    border-radius: 5px;
     top: 0;
     right: 1rem;
-    background: transparent;
     outline: none !important;
+    background: transparent;
 }
 
 .modal .btn-close:hover{
     color: var(--color-four);
 }
 
-.modal iframe{
+.modal .btn-close span{
+    background: var(--color-primary);
+    clip-path: circle();
+    padding: 5px;
+}
+
+.modal iframe,img{
     width: 100%;
+}
+
+.infos-movie{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-secondary);
+}
+
+.infos-movie .allow-age-movie{
+    background-color: var(--color-primary);
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: var(--color-four);
+    font-weight: bold;
+}
+
+.modal-body p{
+    margin: 1rem 0;
+}
+
+.modal-sinopse span{
+    color: var(--color-secondary);
 }
 
 .slide-movie .title-movie{
