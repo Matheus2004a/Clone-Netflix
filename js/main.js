@@ -1,14 +1,12 @@
-const btnPlayMovie = document.querySelector(".button-play-movie")
-const modalMovie = document.querySelector(".background-modal")
 const closeModalPlayMovie = document.querySelector(".close-modal")
+const videoYt = document.querySelector("#video-slide")
 
 closeModalPlayMovie.addEventListener("click", () => {
     modalMovie.classList.toggle("active")
 })
 
-btnPlayMovie.addEventListener("click", () => {
-    modalMovie.classList.toggle("active")
-})
+let iframeVideo = videoYt.contentWindow
+console.log(iframeVideo)
 
 const buttonBackToTop = document.querySelector(".btn-back-to-top")
 
